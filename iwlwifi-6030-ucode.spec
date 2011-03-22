@@ -1,6 +1,6 @@
 %define name iwlwifi-6030-ucode
 %define tarname iwlwifi-6000g2b-ucode
-%define version 17.168.5.1
+%define version 17.168.5.2
 %define release %mkrel 1
 
 Summary: Intel PRO/Wireless 6030AGN microcode
@@ -37,3 +37,5 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc LICENSE.* README.*
 /lib/firmware/*.ucode
+
+
