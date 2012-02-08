@@ -1,7 +1,7 @@
 %define name iwlwifi-6030-ucode
 %define tarname iwlwifi-6000g2b-ucode
-%define version 17.168.5.2
-%define release %mkrel 1
+%define version 18.168.6.1
+%define release 1
 
 Summary: Intel PRO/Wireless 6030AGN microcode
 Name:	 %{name}
@@ -11,7 +11,6 @@ Source0: http://www.intellinuxwireless.org/iwlwifi/downloads/%{tarname}-%{versio
 License: Proprietary
 Group:	 System/Kernel and hardware
 Url:	 http://intellinuxwireless.org/
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
 
 %description
@@ -26,15 +25,10 @@ your system.
 %build
 
 %install
-rm -rf %{buildroot}
 install -d %{buildroot}/lib/firmware
 install -m644 *.ucode %{buildroot}/lib/firmware/
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc LICENSE.* README.*
 /lib/firmware/*.ucode
 
