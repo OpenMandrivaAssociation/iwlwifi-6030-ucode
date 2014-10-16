@@ -1,7 +1,7 @@
 %define name iwlwifi-6030-ucode
 %define tarname iwlwifi-6000g2b-ucode
 %define version 18.168.6.1
-%define release 1
+%define release 2
 
 Summary: Intel PRO/Wireless 6030AGN microcode
 Name:	 %{name}
